@@ -1,0 +1,4 @@
+А) Постройте запрос, который выводит из Table2 только те записи, которых нет в таблице Table1,
+исключая повторы (в решении нельзя пользоваться except, minus и intersect).
+
+Select Table2.* from Table2 where Table2.ID not in (select ID from Table1)
